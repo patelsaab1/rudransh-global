@@ -128,9 +128,8 @@
 
 </style>
 <!-- Hero Section -->
-<section class="relative pt-64 pb-40 overflow-hidden bg-cover bg-center 
-min-h-[550px]"
-style="background-image: url('assest/sultan.png');">
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-cover bg-center min-h-[420px]"
+style="background-image: url('assest/about.jpg');">
     <div class="absolute inset-0 bg-black/60"></div>
     <div class="absolute top-0 right-0 w-1/3 h-full bg-[#1a472a]/20 skew-x-12 transform translate-x-20"></div>
     
@@ -454,7 +453,7 @@ Based in Saket Nagar, Bhopal, Madhya Pradesh (462024, India), we work closely wi
             World-Class <span class="text-[#d4a574]">Facilities</span>
         </h2>
         <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-            Our modern facilities in Ankleshwar, Gujarat ensure quality at every step of the supply chain.
+            Our modern facilities in Bhopal, Madhya Pradesh ensure quality at every step of the supply chain.
         </p>
     </div>
     

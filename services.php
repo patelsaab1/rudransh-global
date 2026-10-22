@@ -78,6 +78,12 @@
         transform: translateX(5px);
     }
 
+    @media (max-width: 640px) {
+        .process-step { padding-left: 3.4rem; }
+        .step-number { width: 2.6rem; height: 2.6rem; font-size: 1.05rem; }
+        .process-step::before { left: 1.25rem; top: 2.8rem; }
+    }
+
     /* Buttons */
     .btn-premium {
         display: inline-block;
@@ -96,7 +102,7 @@
     
 </style>
 
-<section class="relative pt-48 pb-32   overflow-hidden bg-cover bg-center" style="background-image: url('assest/service.jpeg');">
+<section class="relative pt-32 pb-16 md:pt-48 md:pb-32 overflow-hidden bg-cover bg-center" style="background-image: url('assest/service.jpeg');">
     <div class="absolute inset-0 bg-black/50"></div>
     <div class="absolute top-0 right-0 w-1/3 h-full bg-[#1a472a]/20 skew-x-12 transform translate-x-20"></div>
     

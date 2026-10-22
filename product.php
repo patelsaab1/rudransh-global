@@ -3,7 +3,7 @@ include 'admin/db.php';
 include 'header.php';
 ?>
 
-<section class="relative pt-48 pb-24 overflow-hidden bg-cover bg-center" style="background-image: url('assest/product.png');">
+<section class="relative pt-32 pb-16 md:pt-48 md:pb-24 overflow-hidden bg-cover bg-center" style="background-image: url('assest/product.png');">
     <div class="absolute inset-0 bg-black/50"></div>
     <div class="absolute top-0 right-0 w-1/3 h-full bg-[#1a472a]/20 skew-x-12 transform translate-x-20"></div>
     

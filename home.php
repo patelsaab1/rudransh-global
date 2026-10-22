@@ -124,7 +124,7 @@ include 'header.php';
 
 
 </style>
-<section class="relative h-[550px] md:h-screen sm:h-[450px] overflow-hidden bg-gray-50">
+<section class="relative min-h-[100svh] md:h-screen overflow-hidden bg-[#07140d]">
 
     <div class="absolute inset-0" id="hero-slider-container">
 
@@ -162,21 +162,25 @@ include 'header.php';
 </div>
 
 
-    <div class="absolute inset-0 flex items-center justify-center z-30 px-6 text-center">
-        <div class="text-white max-w-4xl">
-            <h1 id="hero-heading" class="text-4xl md:text-7xl font-serif mb-6 leading-tight drop-shadow-2xl">
-                Premium Indian <br> Agricultural Exports 
-            </h1>
-            <p id="hero-text" class="text-sm md:text-lg font-light mb-8 max-w-2xl mx-auto opacity-90 drop-shadow-lg">
-                Your trusted partner for exporting high-quality Indian agricultural products. We ensure quality sourcing, hygienic processing, and reliable delivery to global markets.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="contact.php" class="btn-premium btn-gold px-8 py-3 rounded-full text-xs uppercase font-bold tracking-widest">Request a Quote</a>
-                <a href="product.php" class="btn-premium btn-outline px-8 py-3 rounded-full text-xs uppercase font-bold tracking-widest">View Products</a>
+    <div class="absolute inset-0 z-20 bg-gradient-to-r from-black/75 via-black/45 to-black/20"></div>
+    <div class="relative z-30 min-h-[100svh] md:h-screen flex items-end md:items-center px-5 sm:px-8 pt-28 pb-20 md:pb-16">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="text-white max-w-3xl text-left">
+                <p class="text-[#d4a574] text-[11px] sm:text-xs font-bold tracking-[0.18em] sm:tracking-[0.28em] uppercase mb-4">Rudransh Global · Bhopal</p>
+                <h1 id="hero-heading" class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif mb-5 leading-[1.05] drop-shadow-2xl">
+                    Premium Indian <br> Agricultural Exports
+                </h1>
+                <p id="hero-text" class="text-sm md:text-lg font-light mb-8 max-w-xl opacity-90 drop-shadow-lg">
+                    Your trusted partner for exporting high-quality Indian agricultural products. We ensure quality sourcing, hygienic processing, and reliable delivery to global markets.
+                </p>
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+                    <a href="contact.php" class="btn-premium btn-gold px-8 py-3 rounded-full text-xs uppercase font-bold tracking-widest text-center">Request a Quote</a>
+                    <a href="product.php" class="btn-premium btn-outline px-8 py-3 rounded-full text-xs uppercase font-bold tracking-widest text-center">View Products</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="hidden sm:flex absolute inset-0 items-center justify-between px-8 z-40 pointer-events-none">
+    <div class="hidden xl:flex absolute inset-0 items-center justify-between px-6 z-40 pointer-events-none">
         <button onclick="prevSlide()" class="pointer-events-auto w-14 h-14 flex items-center justify-center border border-white/30 text-white hover:bg-[#d4a574] hover:border-[#d4a574] transition-all rounded-full">
             <i class="fas fa-arrow-left"></i>
         </button>
@@ -191,9 +195,34 @@ include 'header.php';
         <button onclick="goToSlide(2)" class="indicator w-6 h-1 rounded-full bg-white/30 transition-all duration-500" data-slide="2"></button>
         <button onclick="goToSlide(3)" class="indicator w-6 h-1 rounded-full bg-white/30 transition-all duration-500" data-slide="3"></button>
     </div>
-</section> 
+</section>
 
-<section id="products" class="py-10 px-4 sm:px-6 lg:px-8 relative bg-white">
+<section class="bg-[#1a472a] text-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-4">
+        <a href="indian-spices.php" class="px-5 py-6 border-b md:border-b-0 md:border-r border-white/10 hover:bg-white/5 transition">
+            <p class="text-[#d4a574] text-xs tracking-[0.22em] uppercase font-bold">01</p>
+            <p class="font-serif text-xl mt-2">Spices & Herbs</p>
+            <p class="text-white/70 text-sm mt-1">Export-grade aroma and colour</p>
+        </a>
+        <a href="indian-rice.php" class="px-5 py-6 border-b md:border-b-0 md:border-r border-white/10 hover:bg-white/5 transition">
+            <p class="text-[#d4a574] text-xs tracking-[0.22em] uppercase font-bold">02</p>
+            <p class="font-serif text-xl mt-2">Indian Rice</p>
+            <p class="text-white/70 text-sm mt-1">Basmati and non-basmati</p>
+        </a>
+        <a href="fresh-fruit.php" class="px-5 py-6 border-b border-r md:border-b-0 border-white/10 hover:bg-white/5 transition">
+            <p class="text-[#d4a574] text-xs tracking-[0.22em] uppercase font-bold">03</p>
+            <p class="font-serif text-xl mt-2">Fresh Fruits</p>
+            <p class="text-white/70 text-sm mt-1">Packed for long-haul shipping</p>
+        </a>
+        <a href="dry-fruits.php" class="px-5 py-6 hover:bg-white/5 transition">
+            <p class="text-[#d4a574] text-xs tracking-[0.22em] uppercase font-bold">04</p>
+            <p class="font-serif text-xl mt-2">Dry Fruits & Tea</p>
+            <p class="text-white/70 text-sm mt-1">Graded, sealed, ready to ship</p>
+        </a>
+    </div>
+</section>
+
+<section id="products" class="py-16 px-4 sm:px-6 lg:px-8 relative bg-white overflow-hidden">
     <span class="absolute top-10 left-10 text-[12rem] font-bold text-gray-100/50 pointer-events-none select-none leading-none">01</span>
 
     <div class="max-w-7xl mx-auto relative z-10">
@@ -627,15 +656,15 @@ include 'header.php';
       <div class="group relative grid md:grid-cols-2 gap-8 md:gap-16 items-center">
         <div class="relative order-1 md:order-1">
           <div class="relative z-10 overflow-hidden rounded-2xl shadow-2xl transform transition duration-500 group-hover:scale-105">
-            <img src="assest/1.png" alt="Professional Harvesting" class="w-full h-[350px] object-cover" />
+            <img src="assest/1.png" alt="Professional Harvesting" class="w-full h-56 sm:h-72 md:h-[350px] object-cover" />
           </div>
           <div class="absolute -top-4 -left-4 w-24 h-24 bg-[#d4a574]/10 rounded-full -z-0"></div>
         </div>
         
         <div class="order-2 md:order-2 bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-          <div class="flex items-center mb-4">
-            <span class="text-4xl font-black text-[#d4a574] mr-4">01</span>
-            <h3 class="text-2xl text-gray-800 font-bold uppercase tracking-wider">Harvesting</h3>
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <span class="text-3xl sm:text-4xl font-black text-[#d4a574]">01</span>
+            <h3 class="text-xl sm:text-2xl text-gray-800 font-bold uppercase tracking-wide">Harvesting</h3>
           </div>
           <ul class="space-y-4 text-gray-600">
             <li class="flex items-start"><span class="text-[#d4a574] mr-2">✔</span> <strong>Optimal Timing:</strong> All crops are harvested at their peak maturity to ensure maximum nutritional value and quality.</li>
@@ -648,9 +677,9 @@ include 'header.php';
 
       <div class="group relative grid md:grid-cols-2 gap-8 md:gap-16 items-center">
         <div class="order-2 md:order-1 bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-          <div class="flex items-center mb-4">
-            <span class="text-4xl font-black text-[#d4a574] mr-4">02</span>
-            <h3 class="text-2xl text-gray-800 font-bold uppercase tracking-wider">Processing</h3>
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <span class="text-3xl sm:text-4xl font-black text-[#d4a574]">02</span>
+            <h3 class="text-xl sm:text-2xl text-gray-800 font-bold uppercase tracking-wide">Processing</h3>
           </div>
           <ul class="space-y-4 text-gray-600">
             <li class="flex items-start"><span class="text-[#d4a574] mr-2">✔</span> <strong>Hygienic Cleaning:</strong> Advanced machinery is used to eliminate all impurities, dust, and foreign particles.</li>
@@ -662,7 +691,7 @@ include 'header.php';
 
         <div class="relative order-1 md:order-2">
           <div class="relative z-10 overflow-hidden rounded-2xl shadow-2xl transform transition duration-500 group-hover:scale-105">
-            <img src="assest/2.png" alt="Advanced Processing" class="w-full h-[350px] object-cover" />
+            <img src="assest/2.png" alt="Advanced Processing" class="w-full h-56 sm:h-72 md:h-[350px] object-cover" />
           </div>
           <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-[#d4a574]/10 rounded-full -z-0"></div>
         </div>
@@ -671,15 +700,15 @@ include 'header.php';
       <div class="group relative grid md:grid-cols-2 gap-8 md:gap-16 items-center">
         <div class="relative order-1 md:order-1">
           <div class="relative z-10 overflow-hidden rounded-2xl shadow-2xl transform transition duration-500 group-hover:scale-105">
-            <img src="assest/3.png" alt="Secure Packaging" class="w-full h-[350px] object-cover" />
+            <img src="assest/3.png" alt="Secure Packaging" class="w-full h-56 sm:h-72 md:h-[350px] object-cover" />
           </div>
           <div class="absolute -top-4 -left-4 w-24 h-24 bg-[#d4a574]/10 rounded-full -z-0"></div>
         </div>
 
         <div class="order-2 md:order-2 bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-          <div class="flex items-center mb-4">
-            <span class="text-4xl font-black text-[#d4a574] mr-4">03</span>
-            <h3 class="text-2xl text-gray-800 font-bold uppercase tracking-wider">Packaging</h3>
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <span class="text-3xl sm:text-4xl font-black text-[#d4a574]">03</span>
+            <h3 class="text-xl sm:text-2xl text-gray-800 font-bold uppercase tracking-wide">Packaging</h3>
           </div>
           <ul class="space-y-4 text-gray-600">
             <li class="flex items-start"><span class="text-[#d4a574] mr-2">✔</span> <strong>Vacuum Sealing:</strong> Advanced sealing techniques protect products from air, moisture, and contamination.</li>
@@ -739,13 +768,13 @@ include 'header.php';
 
         <?php
         // Fetching testimonials from DB
-        $testRes = mysqli_query($conn, "SELECT * FROM testimonials ORDER BY id DESC");
+        $testRes = ($conn instanceof mysqli) ? mysqli_query($conn, "SELECT * FROM testimonials ORDER BY id DESC") : false;
         ?>
 
         <div class="swiper testimonialSwiper">
             <div class="swiper-wrapper">
 
-                <?php while($t = mysqli_fetch_assoc($testRes)){ ?>
+                <?php if ($testRes) while($t = mysqli_fetch_assoc($testRes)){ ?>
                     <div class="swiper-slide"> 
                         <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100 mx-2">
                             
@@ -821,7 +850,7 @@ include 'header.php';
             
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Contact Form -->
-                <div class="bg-white p-8 rounded-2xl shadow-xl">
+                <div class="bg-white p-5 sm:p-8 rounded-2xl shadow-xl">
                     <h3 class="text-2xl font-bold mb-6" style="color: var(--color-primary);">Send us a Message</h3>
                     <form   method="POST" class="space-y-6">
                         <div>
@@ -877,8 +906,8 @@ include 'header.php';
             </div>
             <div>
                 <h4 class="font-bold text-lg mb-1" style="color: var(--color-primary);">Email Us</h4>
-                <p class="text-gray-600">rp750947@gmail.com</p>
-                <p class="text-gray-600">rohitkiaaan@gmail.com</p>
+                <p class="text-gray-600 break-all">rp750947@gmail.com</p>
+                <p class="text-gray-600 break-all">rohitkiaaan@gmail.com</p>
             </div>
         </div>
         

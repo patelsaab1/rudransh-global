@@ -1,6 +1,6 @@
 <?php include 'header.php'; include 'admin/db.php'; ?>
 
-<section class="relative pt-52 pb-32 overflow-hidden bg-cover bg-center"
+<section class="relative pt-32 pb-16 md:pt-52 md:pb-32 overflow-hidden bg-cover bg-center"
   style="background-image: url('assest/herb.png');">
 
   <div class="absolute inset-0 bg-black/50"></div>

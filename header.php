@@ -40,9 +40,47 @@
             color: var(--color-text);
             background: var(--color-bg);
             overflow-x: hidden;
-            .group:hover .group-hover\:block {
+        }
+
+        .group:hover .group-hover\:block {
             display: block !important;
             animation: fadeInUp 0.3s ease-out;
+        }
+
+        input, select, textarea, button {
+            max-width: 100%;
+        }
+
+        p, li, h1, h2, h3, h4 {
+            overflow-wrap: break-word;
+        }
+
+        @media (max-width: 639px) {
+            h1, h1.font-serif {
+                font-size: 2rem !important;
+                line-height: 1.15 !important;
+            }
+            h2 {
+                font-size: 1.7rem !important;
+                line-height: 1.2 !important;
+            }
+            .section-number {
+                font-size: 2.6rem;
+                top: 0;
+            }
+            .p-8 { padding: 1.15rem !important; }
+            .p-10 { padding: 1.25rem !important; }
+        }
+
+        @media (min-width: 640px) and (max-width: 1023px) {
+            h1 {
+                font-size: clamp(2.3rem, 5vw, 3.25rem) !important;
+                line-height: 1.12 !important;
+            }
+            h2 {
+                font-size: clamp(1.9rem, 4vw, 2.6rem) !important;
+                line-height: 1.2 !important;
+            }
         }
         
         h1, h2, h3, h4, h5, h6 {
@@ -310,14 +348,10 @@
             max-height: 500px;
         }
 
-        /* Mobile Logo Size */
         @media (max-width: 768px) {
-            #navbar .flex img {
-                height: 3.5rem !important; /* 56px - larger logo for mobile */
-            }
-            
-            #nav-brand {
-                font-size: 1.25rem !important; /* Slightly smaller text on mobile */
+            #navbar img {
+                height: 2.75rem !important;
+                width: auto;
             }
         }
     /* Base Slide Style */
@@ -399,11 +433,12 @@
     <!-- Top Bar (Hidden on Mobile) -->
     <div class="hidden md:block absolute top-0 w-full z-50 bg-black/40 text-white border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 py-3">
-            <div class="flex justify-between items-center text-sm">
+            <div class="flex flex-wrap justify-between items-center gap-x-4 gap-y-2 text-sm">
                 <div class="flex items-center space-x-8">
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-map-marker-alt text-xs text-[#d4a574]"></i>
-                        <span>Saket Nagar, Bhopal, Madhya Pradesh, 462024 (INDIA)</span>
+                        <span class="hidden lg:inline">Saket Nagar, Bhopal, Madhya Pradesh, 462024 (INDIA)</span>
+                        <span class="lg:hidden">Bhopal, 462024</span>
                     </div>
                     <div class="hidden lg:flex items-center space-x-2">
                         <i class="far fa-clock text-xs text-[#d4a574]"></i>
@@ -416,7 +451,7 @@
                         <i class="fas fa-phone-alt text-[#d4a574] mr-2"></i>
                         <span>+91 6265 861 847</span>
                     </div>
-                    <div class="flex items-center space-x-4 border-r border-white/20 pr-6">
+                    <div class="hidden xl:flex items-center space-x-4 border-r border-white/20 pr-6">
                         <a href="#" class="hover:text-[#d4a574] transition"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="hover:text-[#d4a574] transition"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="hover:text-[#d4a574] transition"><i class="fab fa-linkedin-in"></i></a>
@@ -446,15 +481,15 @@
       <a href="index.php" class="flex items-center h-full">
         <img src="assest/rohit-logo.png"
              alt="Rohit"
-             class="h-14 md:h-16 w-auto object-contain" />
+             class="h-11 md:h-14 w-auto max-w-[150px] md:max-w-[190px] object-contain" />
       </a>
 
       <!-- Desktop Menu -->
-<ul class="hidden lg:flex items-center space-x-8">
-  <li><a href="home.php" class="nav-link text-white text-sm tracking-widest hover:text-[#d4a574] transition uppercase font-semibold">Home</a></li>
+<ul class="hidden lg:flex items-center gap-3 xl:gap-6 2xl:gap-8">
+  <li><a href="home.php" class="nav-link text-white text-xs xl:text-sm tracking-[0.14em] xl:tracking-widest hover:text-[#d4a574] transition uppercase font-semibold">Home</a></li>
 
   <li class="relative group">
-    <a href="product.php" class="nav-link text-white text-sm tracking-widest hover:text-[#d4a574] transition uppercase flex items-center font-semibold">
+    <a href="product.php" class="nav-link text-white text-xs xl:text-sm tracking-[0.14em] xl:tracking-widest hover:text-[#d4a574] transition uppercase flex items-center font-semibold">
       Our Products
       <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
     </a>
@@ -503,15 +538,15 @@
     </ul>
   </li>
 
-  <li><a href="about.php" class="nav-link text-white text-sm tracking-widest hover:text-[#d4a574] transition uppercase font-semibold">About</a></li>
-  <li><a href="services.php" class="nav-link text-white text-sm tracking-widest hover:text-[#d4a574] transition uppercase font-semibold">Services</a></li>
-  <li><a href="contact.php" class="nav-link text-white text-sm tracking-widest hover:text-[#d4a574] transition uppercase font-semibold">Contact</a></li>
+  <li><a href="about.php" class="nav-link text-white text-xs xl:text-sm tracking-[0.14em] xl:tracking-widest hover:text-[#d4a574] transition uppercase font-semibold">About</a></li>
+  <li><a href="services.php" class="nav-link text-white text-xs xl:text-sm tracking-[0.14em] xl:tracking-widest hover:text-[#d4a574] transition uppercase font-semibold">Services</a></li>
+  <li><a href="contact.php" class="nav-link text-white text-xs xl:text-sm tracking-[0.14em] xl:tracking-widest hover:text-[#d4a574] transition uppercase font-semibold">Contact</a></li>
 </ul>
 
       <!-- Right Buttons -->
       <div class="flex items-center space-x-4">
         <a href="contact.php"
-           class="btn-premium btn-gold hidden md:block px-6 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest">
+           class="btn-premium btn-gold hidden lg:block px-4 xl:px-6 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest">
           Get a Quote
         </a>
 
@@ -540,7 +575,7 @@
     <img
       src="assest/rohit-logo.png"
       alt="Rohit"
-      class="h-16 w-auto mx-auto"
+      class="h-12 w-auto max-w-[160px] mx-auto"
     >
 </div>
 
@@ -562,15 +597,14 @@
                     </li>
                     
                     <li>
-                        <a href="
-product.php"
-     class="flex-1 py-3 px-4 text-white hover:text-[#d4a574] transition rounded uppercase text-sm tracking-wider">
-     Our Products
-  </a>
-                        
-  <button id="products-toggle" class="px-4 text-white hover:text-[#d4a574]">
-      <i class="fas fa-chevron-down text-xs transition-transform" id="products-icon"></i>
-  </button>
+                        <div class="flex items-center justify-between">
+                        <a href="product.php" class="flex-1 py-3 px-4 text-white hover:text-[#d4a574] transition rounded uppercase text-sm tracking-wider">
+                            Our Products
+                        </a>
+                        <button id="products-toggle" class="px-4 text-white hover:text-[#d4a574]" type="button">
+                            <i class="fas fa-chevron-down text-xs transition-transform" id="products-icon"></i>
+                        </button>
+                        </div>
                         <ul class="mobile-submenu pl-4" id="products-submenu">
                             <li>
                                 <a href="indian-spices.php" class="block py-2 px-4 text-white/90 hover:text-[#d4a574] transition text-xs">INDIAN SPICES</a>

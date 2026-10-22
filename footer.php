@@ -6,7 +6,7 @@
             
             <div class="col-span-2 lg:col-span-1 space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left mb-4">
                 <div class="transition-transform duration-300 hover:scale-105">
-                    <img src="./assest/rohit-logo.png" alt="Rohit" class="h-20 md:h-24 w-auto object-contain">
+                    <img src="./assest/rohit-logo.png" alt="Rohit" class="h-16 md:h-20 w-auto max-w-[220px] object-contain">
                 </div>
                 <p class="text-gray-300 text-sm leading-relaxed max-w-xs">
                     Rudransh Global is a premium agro export house in Saket Nagar, Bhopal. Visit rudransh-global.com.
@@ -65,8 +65,8 @@
                     <li class="flex items-start space-x-3">
                         <i class="fas fa-envelope text-[#d4a574] mt-1"></i>
                         <span class="leading-snug">
-                            <a href="mailto:rp750947@gmail.com" class="hover:text-white transition-colors">rp750947@gmail.com</a><br>
-                            <a href="mailto:rohitkiaaan@gmail.com" class="hover:text-white transition-colors">rohitkiaaan@gmail.com</a>
+                            <a href="mailto:rp750947@gmail.com" class="hover:text-white transition-colors break-all">rp750947@gmail.com</a><br>
+                            <a href="mailto:rohitkiaaan@gmail.com" class="hover:text-white transition-colors break-all">rohitkiaaan@gmail.com</a>
                         </span>
                     </li>
                     <li class="flex items-center space-x-3">
@@ -88,7 +88,7 @@
 
     <a href="https://wa.me/916265861847?text=Hello%20Rudransh%20Global%2C%20I%20am%20interested%20in%20your%20export%20products."
        target="_blank"
-       class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-[999]">
+       class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-[#25D366] text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-2xl z-[60]">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
 </footer>
@@ -153,19 +153,19 @@
 const contentData = [
   {
     heading: "Premium Indian <br> Agricultural Exports",
-    text: "Your trusted partner for exporting high-quality Indian agricultural products. We ensure quality sourcing, hygienic processing, and reliable delivery to global markets."
+    text: "Bulk spices, rice, fruits and tea from Bhopal, packed for international buyers with documents, grading and shipment support."
   },
   {
-    heading: "Authentic Indian <br> Spices & Herbs",
-    text: "Carefully sourced spices known for rich aroma, natural taste, and export-grade quality—processed and packed to meet international standards."
+    heading: "Export-Grade <br> Spices & Herbs",
+    text: "Sourced, cleaned and packed to hold aroma and colour through long-distance shipping."
   },
   {
-    heading: "Indian Rice & <br> Farm Produce",
-    text: "Supplying premium basmati and non-basmati rice along with farm-fresh produce, handled with precision from field to shipment."
+    heading: "Basmati Rice <br> for Global Buyers",
+    text: "Long-grain basmati and non-basmati rice, graded and bagged to your order size."
   },
   {
-    heading: "Fresh Fruits & <br> Dry Fruits Export",
-    text: "Seasonal fresh fruits and premium dry fruits, hygienically packed and exported to preserve freshness, nutrition, and shelf life."
+    heading: "Fruits, Dry Fruits <br> & Tea Shipments",
+    text: "Seasonal fruit, dry fruit and tea lots, sealed for shelf life and ready for export."
   }
 ];
 

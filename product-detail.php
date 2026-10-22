@@ -62,7 +62,7 @@ $product = mysqli_fetch_assoc(
                     <div class="relative">
                         <div class="absolute -inset-2 border-2 border-dashed border-[#d4a574]/30 rounded-full animate-[spin_20s_linear_infinite]"></div>
                         
-                        <div class="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-full shadow-2xl border-4 border-white">
+                        <div class="relative w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 overflow-hidden rounded-full shadow-2xl border-4 border-white">
                             <img src="<?= $s['step_image'] ?>" 
                                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                                  alt="<?= $s['step_title'] ?>">

@@ -1,6 +1,6 @@
 <?php include 'header.php'; include 'admin/db.php'; ?>
 
-<section class="relative pt-52 pb-28 overflow-hidden bg-cover bg-center"
+<section class="relative pt-32 pb-16 md:pt-52 md:pb-28 overflow-hidden bg-cover bg-center"
   style="background-image: url('assest/fruits1.png');">
 
   <!-- Dark overlay -->
